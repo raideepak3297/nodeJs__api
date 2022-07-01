@@ -1,0 +1,122 @@
+/* inquestPro sidebar css */
+#wrapper {
+    overflow-x: hidden;
+}
+
+#sidebar-wrapper {
+    min-height: 100vh;
+    margin-left: -15rem;
+    -webkit-transition: margin 0.25s ease-out;
+    -moz-transition: margin 0.25s ease-out;
+    -o-transition: margin 0.25s ease-out;
+    transition: margin 0.25s ease-out;
+    background-color: #F4F5F7;
+}
+
+#sidebar-wrapper .sidebar-heading {
+    background: #42526E 0% 0% no-repeat padding-box;
+    height: 90px;
+    text-align: center;
+    display: flex;
+}
+
+#sidebar-wrapper .sidebar-heading .title {
+    padding: 36px 35px;
+    font-size: 18px;
+    line-height: 16px;
+    font-weight: bold;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    display: block;
+}
+
+#sidebar-wrapper .sidebar-heading .back-arrow {
+    width: 36px;
+    background: #344563 0% 0% no-repeat padding-box;
+    color: white;
+}
+
+#sidebar-wrapper .list-group {
+    width: 15rem;
+}
+
+#sidebar-wrapper .list-group-item.active {
+    margin-top: 0px !important;
+}
+
+#sidebar-wrapper .list-group-item {
+    border: 1px solid rgba(0,0,0,.125);
+    height: 53px;
+    padding: .75rem 1.5rem;
+    border-width: 0px 0px 1px 0px;
+    background-color: #F4F5F7;
+    text-decoration: none;
+}
+
+#sidebar-wrapper .list-group-item:hover label {
+    color: #0052CC !important;
+}
+
+#sidebar-wrapper .list-group-item:hover svg {
+    fill: #0052CC !important;
+}
+
+#sidebar-wrapper .list-group-item label {
+    font-size: 18px;
+    line-height: 16px;
+    color: #344563;
+    margin: 7px;
+    margin-right: 18px;
+}
+
+#sidebar-wrapper .list-group-item svg {
+    width: 24px;
+    height: 24px;
+    margin-top: -5px;
+    fill: #42526e;
+}
+
+#sidebar-wrapper .list-group-item.active label {
+    color: #0052CC;
+}
+
+#sidebar-wrapper .list-group-item.active svg {
+    fill: #0052CC;
+}
+
+#sidebar-wrapper .fixed-btm {
+    position: absolute;
+    width: 210px;
+    bottom: 0;
+}
+
+#sidebar-wrapper .fixed-btm .bg-white {
+    background-color: #ffffff;
+}
+
+#page-content-wrapper {
+    min-width: 100vw;
+}
+
+#wrapper.toggled #sidebar-wrapper {
+    margin-left: 0;
+}
+
+#wrapper.bg-light {
+    background-color: #F4F5F7!important;
+}
+
+@media (min-width: 768px) {
+    #sidebar-wrapper {
+        margin-left: 0;
+    }
+
+    #page-content-wrapper {
+        min-width: 0;
+        width: 100%;
+    }
+
+    #wrapper.toggled #sidebar-wrapper {
+        margin-left: -15rem;
+    }
+}

@@ -1,0 +1,22 @@
+#page-content-wrapper .navbar {
+    height: 90px;
+}
+
+#page-content-wrapper .navbar .btn .main-title {
+    color: #344563;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 20px;
+    margin-left: 15px;
+    margin-top: 5px;
+    margin-bottom: 0;
+}
+
+#page-content-wrapper .navbar #menu-toggle svg {
+    margin-top: -8px;
+}
+
+#page-content-wrapper .navbar .cancel-go-back-btn {
+    background: #F0F1F2 0% 0% no-repeat padding-box;
+    color: #A5ADBA;
+}

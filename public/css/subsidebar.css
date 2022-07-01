@@ -1,0 +1,55 @@
+#sub-sidebar-div .aui-page-panel ul li a:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+#sub-sidebar-div .sub-sidebar {
+    width: 202px !important;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    box-shadow: 5px 0px 5px #0000000D;
+    height: calc(100vh - 100px);
+    padding: 0 !important;
+}
+
+#sub-sidebar-div .sub-sidebar ul {
+    padding: 0;
+    margin-bottom: 0;
+    list-style: none;
+}
+
+#sub-sidebar-div .sub-sidebar ul li {
+    height: 50px;
+    color: #344563;
+    display: flex;    
+    border-bottom: 1px solid #DFE1E5;
+}
+
+#sub-sidebar-div .sub-sidebar ul li.heading{
+    height: 30px;
+    background-color: #E5EDFA;
+}
+
+#sub-sidebar-div .sub-sidebar ul li.heading a{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: normal;
+    letter-spacing: 0px;
+    color: #B2BED4;
+    text-transform: uppercase;
+}
+
+#sub-sidebar-div .sub-sidebar ul li.active {
+    background: #6B778C 0% 0% no-repeat padding-box;
+}
+
+#sub-sidebar-div .sub-sidebar ul li.active a {
+    color: #FFFFFF;
+}
+
+#sub-sidebar-div .sub-sidebar ul li a {
+    color: #344563;
+    font-size: 16px;
+    line-height: 19px;
+    text-decoration: none;
+    margin: auto 20px !important;
+}

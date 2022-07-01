@@ -1,0 +1,63 @@
+
+/* users table
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `first_name` varchar(255) DEFAULT NULL,
+  `last_name` varchar(255) DEFAULT NULL,
+  `email_id` varchar(255) DEFAULT NULL,
+  `password` varchar(255) DEFAULT NULL,
+  `user_role` int(11) DEFAULT NULL,
+  `phone_number` varchar(255) DEFAULT NULL,
+  `registration_datetime` datetime(3) DEFAULT current_timestamp(3),
+  `last_login_datetime` datetime(3) DEFAULT current_timestamp(3),
+  `is_registered` tinyint(1) DEFAULT 0,
+  `updated_datetime` datetime(3) DEFAULT '2021-04-28 13:44:02.000',
+  `created_by` int(11) DEFAULT NULL,
+  `updated_by` int(11) DEFAULT NULL,
+  `is_active` tinyint(1) DEFAULT 1,
+  `is_deleted` tinyint(1) DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `idx_user_role` (`user_role`)
+) ENGINE=InnoDB AUTO_INCREMENT=6 DEFAULT CHARSET=utf8
+*/
+
+
+/* access_token table
+CREATE TABLE `access_token` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `user_id` int(11) DEFAULT NULL,
+  `user_role` int(11) DEFAULT NULL,
+  `access_token` varchar(500) DEFAULT NULL,
+  `access_token_creation` datetime(3) DEFAULT current_timestamp(3),
+  `access_token_expiry` int(11) DEFAULT NULL,
+  `created_by` varchar(255) DEFAULT '0',
+  `is_active` tinyint(1) DEFAULT 1,
+  `is_deleted` tinyint(1) DEFAULT 0,
+  PRIMARY KEY (`id`),
+  KEY `user_id` (`user_id`),
+  KEY `idx_user_id` (`user_id`)
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8
+*/
+
+
+/* password_policy table
+CREATE TABLE `password_policy` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `min_length` int(11) DEFAULT NULL,
+  `min_numeric_char` int(11) DEFAULT NULL,
+  `min_lower_char` int(11) DEFAULT NULL,
+  `min_upper_char` int(11) DEFAULT NULL,
+  `min_special_char` int(11) DEFAULT NULL,
+  `password_expire_day` datetime(3) DEFAULT NULL,
+  `lock_attempt_count` int(11) DEFAULT NULL,
+  `lock_days` varchar(255) DEFAULT NULL,
+  `device_type` varchar(255) DEFAULT NULL,
+  `created_datetime` datetime(3) DEFAULT current_timestamp(3),
+  `updated_datetime` datetime(3) DEFAULT current_timestamp(3),
+  `updated_by` int(11) DEFAULT 0,
+  `created_by` int(11) DEFAULT 0,
+  `is_active` tinyint(1) DEFAULT 1,
+  `is_deleted` tinyint(1) DEFAULT 0,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8
+*/
